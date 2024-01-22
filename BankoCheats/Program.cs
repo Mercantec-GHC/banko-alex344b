@@ -39,12 +39,12 @@ while (true)
     Console.WriteLine();
     for(int i = 0; i < 9; i++)
     {
-        Console.WriteLine(plate1Row2[i] == -1 ? "X " : plate1Row2[i] + " ");
+        Console.Write(plate1Row2[i] == -1 ? "X " : plate1Row2[i] + " ");
     }
     Console.WriteLine();
     for (int i = 0; i < 9; i++)
     {
-        Console.WriteLine(plate1Row3[i] == -1 ? "X " : plate1Row3[i] + " ");
+        Console.Write(plate1Row3[i] == -1 ? "X " : plate1Row3[i] + " ");
     }
     Console.WriteLine();
 
@@ -119,8 +119,5 @@ while (true)
                 Console.Clear();
             }
             break;
-
-        case 3;
-            if(plate1Row1)
     }
 }
