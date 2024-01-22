@@ -1,0 +1,14 @@
+C:\Users\Alexander\Source\Repos\banko-alex344b\BankoCheats\bin\Debug\net8.0\BankoCheats.exe
+C:\Users\Alexander\Source\Repos\banko-alex344b\BankoCheats\bin\Debug\net8.0\BankoCheats.deps.json
+C:\Users\Alexander\Source\Repos\banko-alex344b\BankoCheats\bin\Debug\net8.0\BankoCheats.runtimeconfig.json
+C:\Users\Alexander\Source\Repos\banko-alex344b\BankoCheats\bin\Debug\net8.0\BankoCheats.dll
+C:\Users\Alexander\Source\Repos\banko-alex344b\BankoCheats\bin\Debug\net8.0\BankoCheats.pdb
+C:\Users\Alexander\Source\Repos\banko-alex344b\BankoCheats\obj\Debug\net8.0\BankoCheats.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alexander\Source\Repos\banko-alex344b\BankoCheats\obj\Debug\net8.0\BankoCheats.AssemblyInfoInputs.cache
+C:\Users\Alexander\Source\Repos\banko-alex344b\BankoCheats\obj\Debug\net8.0\BankoCheats.AssemblyInfo.cs
+C:\Users\Alexander\Source\Repos\banko-alex344b\BankoCheats\obj\Debug\net8.0\BankoCheats.csproj.CoreCompileInputs.cache
+C:\Users\Alexander\Source\Repos\banko-alex344b\BankoCheats\obj\Debug\net8.0\BankoCheats.dll
+C:\Users\Alexander\Source\Repos\banko-alex344b\BankoCheats\obj\Debug\net8.0\refint\BankoCheats.dll
+C:\Users\Alexander\Source\Repos\banko-alex344b\BankoCheats\obj\Debug\net8.0\BankoCheats.pdb
+C:\Users\Alexander\Source\Repos\banko-alex344b\BankoCheats\obj\Debug\net8.0\BankoCheats.genruntimeconfig.cache
+C:\Users\Alexander\Source\Repos\banko-alex344b\BankoCheats\obj\Debug\net8.0\ref\BankoCheats.dll
