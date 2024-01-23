@@ -54,29 +54,31 @@ while (true)
     //updater spilstadie baseret på input
     switch (gamePhase)
     {
-        case 1:
-            if (plate1Row1.Contains(choosenNumber))
+        case 1: // en fuld række på første række
+            if (plate1Row1.Contains(choosenNumber) && choosenNumber != 0)
             {
                 newNumber = plate1Row1.IndexOf(choosenNumber);
                 plate1Row1[newNumber] = -1;
             }
-            else if (plate1Row2.Contains(choosenNumber))
+            else if (plate1Row2.Contains(choosenNumber) && choosenNumber != 0)
             {
                 newNumber = plate1Row2.IndexOf(choosenNumber);
                 plate1Row2[newNumber] = -1;
             }
-            else if (plate1Row3.Contains(choosenNumber))
+            else if (plate1Row3.Contains(choosenNumber) && choosenNumber != 0)
             {
                 newNumber = plate1Row3.IndexOf(choosenNumber);
                 plate1Row3[newNumber] = -1;
             }
 
-            if (plate1Row1.All(x => x == -1) || plate1Row2.All(x => x == -1) || plate1Row3.All(x => x == -1))
+            if (plate1Row1.All(x => x == -1 || x != 0) || 
+                plate1Row2.All(x => x == -1 || x != 0) || 
+                plate1Row3.All(x => x == -1 || x != 0))
             {
                 Console.WriteLine("Du har en fuld række");
                 fullRow1 = true;
                 Console.ReadLine();
-                Console.WriteLine("Fortsæt klik her");
+                Console.WriteLine("Fortsæt klik enter");
                 Console.Clear();
                 gamePhase = 2;
             }
@@ -86,31 +88,31 @@ while (true)
             }
             break;
 
-        case 2:
-            if (plate1Row1.Contains(choosenNumber))
+        case 2: // 2 fulde rækker på første plade
+            if (plate1Row1.Contains(choosenNumber) && choosenNumber != 0)
             {
                 newNumber = plate1Row1.IndexOf(choosenNumber);
                 plate1Row1[newNumber] = -1;
             }
-            else if (plate1Row2.Contains(choosenNumber))
+            else if (plate1Row2.Contains(choosenNumber) && choosenNumber != 0)
             {
                 newNumber = plate1Row2.IndexOf(choosenNumber);
                 plate1Row2[newNumber] = -1;
             }
-            else if (plate1Row3.Contains(choosenNumber))
+            else if (plate1Row3.Contains(choosenNumber) && choosenNumber != 0)
             {
                 newNumber = plate1Row3.IndexOf(choosenNumber);
                 plate1Row3[newNumber] = -1;
             }
 
-            if ((plate1Row1.All(x => x == -1) && plate1Row2.All(x => x == -1)) ||
-                (plate1Row2.All(x => x == -1) && plate1Row3.All(x => x == -1)) ||
-                (plate1Row3.All(x => x == -1) && plate1Row1.All(x => x == -1)))
+            if ((plate1Row1.All(x => x == -1 || x != 0) && plate1Row2.All(x => x == -1 || x != 0)) ||
+                (plate1Row2.All(x => x == -1 || x != 0) && plate1Row3.All(x => x == -1 || x != 0)) ||
+                (plate1Row3.All(x => x == -1 || x != 0) && plate1Row1.All(x => x == -1 || x != 0)))
             {
                 Console.WriteLine("Du har 2 fulde rækker");
                 fullRow2 = true;
                 Console.ReadLine();
-                Console.WriteLine("Fortsæt klik her");
+                Console.WriteLine("Fortsæt klik enter");
                 Console.Clear();
                 gamePhase = 3;
             }
@@ -119,5 +121,40 @@ while (true)
                 Console.Clear();
             }
             break;
+
+        case 3: // fuld plade på første plade
+            if (plate1Row1.Contains(choosenNumber) && choosenNumber != 0)
+            {
+                newNumber = plate1Row1.IndexOf(choosenNumber);
+                plate1Row1[newNumber] = -1;
+            }
+            else if (plate1Row2.Contains(choosenNumber) && choosenNumber != 0)
+            {
+                newNumber = plate1Row2.IndexOf(choosenNumber);
+                plate1Row2[newNumber] = -1;
+            }
+            else if (plate1Row3.Contains(choosenNumber) && choosenNumber != 0)
+            {
+                newNumber = plate1Row3.IndexOf(choosenNumber);
+                plate1Row3[newNumber] = -1;
+            }
+
+            if ((plate1Row1.All(x => x == -1 || x != 0) &&
+                 plate1Row2.All(x => x == -1 || x != 0) && 
+                 plate1Row3.All(x => x == -1 || x != 0)))
+            {
+                Console.WriteLine("DU HAR FULD PLADE BITCHES!");
+                fullRow3 = true;
+                Console.ReadLine();
+                Console.WriteLine("Fortsæt klik enter");
+                Console.Clear();
+                gamePhase = 4;
+            }
+            else
+            {
+                Console.Clear();
+            }
+            break;
+
     }
 }
