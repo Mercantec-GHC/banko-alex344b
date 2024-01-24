@@ -44,11 +44,7 @@ class Program
         bankoPlates.Add(new BankoPlate("Alexander 2", plate2Row1, plate2Row2, plate2Row3));
         bankoPlates.Add(new BankoPlate("Alexander 3", plate3Row1, plate3Row2, plate3Row3));
 
-        int chosenNumber = 0;
 
-        int newNumber;
-
-        
         foreach (BankoPlate plate in bankoPlates)
         {
             Console.WriteLine($"Plate Name: {plate.Name}");
