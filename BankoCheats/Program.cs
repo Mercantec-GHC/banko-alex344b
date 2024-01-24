@@ -3,6 +3,8 @@ using System.Net.Http.Headers;
 using System.Net.Security;
 using System.Runtime.InteropServices;
 
+
+
 //creating lists and ids
 //Alexander 1
 List<int> plate1Row1 = new List<int> { 4, 0, 21, 0, 42, 0, 0, 71, 80 };
@@ -35,6 +37,8 @@ public class BankoPlate
     }
 }
 
+class Program { 
+}
 List<BankoPlate> bankoPlates = new List<BankoPlate>();
 bankoPlates.Add(new BankoPlate("Alexander 1", plate1Row1, plate1Row2, plate1Row3));
 bankoPlates.Add(new BankoPlate("Alexander 2", plate2Row1, plate2Row2, plate2Row3));
@@ -42,8 +46,9 @@ bankoPlates.Add(new BankoPlate("Alexander 3", plate3Row1, plate3Row2, plate3Row3
 
 foreach (BankoPlate plate in bankoPlates)
 {
-    for (int i = 0; i < 9; i++)
-
+    for (int i = 0; i < 3; i++)
+        Console.WriteLine($"Plate Name: {plate.name}");
+        
 }
 
 // Storing the chosen number

@@ -1,0 +1,15 @@
+C:\Users\Alexander\source\repos\NewbankoCheats\banko-alex344b\BankoCheats\updatedbankocheats\bin\Debug\net8.0\updatedbankocheats.exe
+C:\Users\Alexander\source\repos\NewbankoCheats\banko-alex344b\BankoCheats\updatedbankocheats\bin\Debug\net8.0\updatedbankocheats.deps.json
+C:\Users\Alexander\source\repos\NewbankoCheats\banko-alex344b\BankoCheats\updatedbankocheats\bin\Debug\net8.0\updatedbankocheats.runtimeconfig.json
+C:\Users\Alexander\source\repos\NewbankoCheats\banko-alex344b\BankoCheats\updatedbankocheats\bin\Debug\net8.0\updatedbankocheats.dll
+C:\Users\Alexander\source\repos\NewbankoCheats\banko-alex344b\BankoCheats\updatedbankocheats\bin\Debug\net8.0\updatedbankocheats.pdb
+C:\Users\Alexander\source\repos\NewbankoCheats\banko-alex344b\BankoCheats\updatedbankocheats\obj\Debug\net8.0\updatedbankocheats.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alexander\source\repos\NewbankoCheats\banko-alex344b\BankoCheats\updatedbankocheats\obj\Debug\net8.0\updatedbankocheats.AssemblyInfoInputs.cache
+C:\Users\Alexander\source\repos\NewbankoCheats\banko-alex344b\BankoCheats\updatedbankocheats\obj\Debug\net8.0\updatedbankocheats.AssemblyInfo.cs
+C:\Users\Alexander\source\repos\NewbankoCheats\banko-alex344b\BankoCheats\updatedbankocheats\obj\Debug\net8.0\updatedbankocheats.csproj.CoreCompileInputs.cache
+C:\Users\Alexander\source\repos\NewbankoCheats\banko-alex344b\BankoCheats\updatedbankocheats\obj\Debug\net8.0\updatedbankocheats.sourcelink.json
+C:\Users\Alexander\source\repos\NewbankoCheats\banko-alex344b\BankoCheats\updatedbankocheats\obj\Debug\net8.0\updatedbankocheats.dll
+C:\Users\Alexander\source\repos\NewbankoCheats\banko-alex344b\BankoCheats\updatedbankocheats\obj\Debug\net8.0\refint\updatedbankocheats.dll
+C:\Users\Alexander\source\repos\NewbankoCheats\banko-alex344b\BankoCheats\updatedbankocheats\obj\Debug\net8.0\updatedbankocheats.pdb
+C:\Users\Alexander\source\repos\NewbankoCheats\banko-alex344b\BankoCheats\updatedbankocheats\obj\Debug\net8.0\updatedbankocheats.genruntimeconfig.cache
+C:\Users\Alexander\source\repos\NewbankoCheats\banko-alex344b\BankoCheats\updatedbankocheats\obj\Debug\net8.0\ref\updatedbankocheats.dll
