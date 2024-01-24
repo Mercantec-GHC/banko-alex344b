@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
+//making a public class
 public class BankoPlate
 {
     public string Name { get; set; }
@@ -17,6 +18,7 @@ public class BankoPlate
     }
 }
 
+//making a class called program, to store lists
 class Program 
 {
     static void Main(string[] args)
@@ -42,28 +44,38 @@ class Program
         bankoPlates.Add(new BankoPlate("Alexander 2", plate2Row1, plate2Row2, plate2Row3));
         bankoPlates.Add(new BankoPlate("Alexander 3", plate3Row1, plate3Row2, plate3Row3));
 
+        int chosenNumber = 0;
+
+        int newNumber;
+
+        
         foreach (BankoPlate plate in bankoPlates)
         {
             Console.WriteLine($"Plate Name: {plate.Name}");
+            int numberToSpace = 0;
             Console.WriteLine("Row 1:");
-            foreach (int value in plate.Row1)
+            foreach (int zero in plate.Row1)
+            if (zero != 0)
             {
-                Console.Write(value + " ");
+                Console.Write(zero + " ");
+                    Console.Write(zero == numberToSpace ? $"\u0336{zero}\u0336 " : $"{"| "}" );
             }
             Console.WriteLine("\nRow 2:");
-            foreach (int value in plate.Row2)
+            foreach (int zero in plate.Row2)
+            if (zero != 0)
             {
-                Console.Write(value + " ");
+                Console.Write(zero + " ");
+                    Console.Write(zero == numberToSpace ? $"\u0336{zero}\u0336 " : $"{"| "}");
             }
             Console.WriteLine("\nRow 3:");
-            foreach (int value in plate.Row3)
+            foreach (int zero in plate.Row3)
+            if (zero != 0)
             {
-                Console.Write(value + " ");
+                Console.Write(zero + " ");
+                    Console.Write(zero == numberToSpace ? $"\u0336{zero}\u0336 " : $"{"| "}");
             }
             Console.WriteLine("\n-----------------\n");
-
         }
-        
         Console.ReadLine();
     }
 }
