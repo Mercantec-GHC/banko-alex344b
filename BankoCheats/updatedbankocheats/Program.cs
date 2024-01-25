@@ -48,12 +48,19 @@ class Program
         List<int> plate4Row2 = new List<int>() { 4, 15, 25, 0, 47, 0, 0, 0, 84 };
         List<int> plate4Row3 = new List<int>() { 0, 16, 0, 37, 0, 59, 0, 79, 85 };
 
+        //Alexander 5
+        List<int> plate5Row1 = new List<int>() { 0, 0, 20, 33, 0, 0, 60, 74, 80 };
+        List<int> plate5Row2 = new List<int>() { 7, 15, 24, 0, 0, 53, 62, 0, 0 };
+        List<int> plate5Row3 = new List<int>() { 0, 0, 27, 35, 49, 59, 0, 0, 86 };
+
         //Listing the plates in order
         List<BankoPlate> bankoPlates = new List<BankoPlate>();
         bankoPlates.Add(new BankoPlate("Alexander 1", plate1Row1, plate1Row2, plate1Row3));
         bankoPlates.Add(new BankoPlate("Alexander 2", plate2Row1, plate2Row2, plate2Row3));
         bankoPlates.Add(new BankoPlate("Alexander 3", plate3Row1, plate3Row2, plate3Row3));
         bankoPlates.Add(new BankoPlate("Alexander 4", plate4Row1, plate4Row2, plate4Row3));
+        bankoPlates.Add(new BankoPlate("Alexander 5", plate5Row1, plate5Row2, plate5Row3));
+
 
         int chosenNumber = 0;
 
