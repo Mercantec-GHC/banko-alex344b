@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Alexander\\source\\repos\\NewbankoCheats\\banko-alex344b\\BankoCheats\\updatedbankocheats\\updatedbankocheats.csproj": {}
+    "C:\\Users\\alexa\\Documents\\GitHub\\banko-alex344b\\BankoCheats\\updatedbankocheats\\updatedbankocheats.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Alexander\\source\\repos\\NewbankoCheats\\banko-alex344b\\BankoCheats\\updatedbankocheats\\updatedbankocheats.csproj": {
+    "C:\\Users\\alexa\\Documents\\GitHub\\banko-alex344b\\BankoCheats\\updatedbankocheats\\updatedbankocheats.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Alexander\\source\\repos\\NewbankoCheats\\banko-alex344b\\BankoCheats\\updatedbankocheats\\updatedbankocheats.csproj",
+        "projectUniqueName": "C:\\Users\\alexa\\Documents\\GitHub\\banko-alex344b\\BankoCheats\\updatedbankocheats\\updatedbankocheats.csproj",
         "projectName": "updatedbankocheats",
-        "projectPath": "C:\\Users\\Alexander\\source\\repos\\NewbankoCheats\\banko-alex344b\\BankoCheats\\updatedbankocheats\\updatedbankocheats.csproj",
-        "packagesPath": "C:\\Users\\Alexander\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Alexander\\source\\repos\\NewbankoCheats\\banko-alex344b\\BankoCheats\\updatedbankocheats\\obj\\",
+        "projectPath": "C:\\Users\\alexa\\Documents\\GitHub\\banko-alex344b\\BankoCheats\\updatedbankocheats\\updatedbankocheats.csproj",
+        "packagesPath": "C:\\Users\\alexa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\alexa\\Documents\\GitHub\\banko-alex344b\\BankoCheats\\updatedbankocheats\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Alexander\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\alexa\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -38,9 +34,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "default"
         }
       },
       "frameworks": {
