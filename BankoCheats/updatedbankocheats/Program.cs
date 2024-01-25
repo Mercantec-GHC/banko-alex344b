@@ -9,7 +9,7 @@ public class BankoPlate
     public List<int> Row2 { get; set; }
     public List<int> Row3 { get; set; }
 
-    public BankoPlate(string name, List<int> row1, List<int> row2, List<int> row3) 
+    public BankoPlate(string name, List<int> row1, List<int> row2, List<int> row3)
     {
         Name = name;
         Row1 = row1;
@@ -19,7 +19,7 @@ public class BankoPlate
 }
 
 //making a class called program, to store lists
-class Program 
+class Program
 {
     static List<int> enteredNumbers = new List<int>();
 
@@ -46,41 +46,123 @@ class Program
         List<int> plate4Row2 = new List<int>() { 4, 15, 25, 0, 47, 0, 0, 0, 84 };
         List<int> plate4Row3 = new List<int>() { 0, 16, 0, 37, 0, 59, 0, 79, 85 };
 
+        //Listing the plates in order
         List<BankoPlate> bankoPlates = new List<BankoPlate>();
         bankoPlates.Add(new BankoPlate("Alexander 1", plate1Row1, plate1Row2, plate1Row3));
         bankoPlates.Add(new BankoPlate("Alexander 2", plate2Row1, plate2Row2, plate2Row3));
         bankoPlates.Add(new BankoPlate("Alexander 3", plate3Row1, plate3Row2, plate3Row3));
         bankoPlates.Add(new BankoPlate("Alexander 4", plate4Row1, plate4Row2, plate4Row3));
 
+        int chosenNumber = 0;
 
-        foreach (BankoPlate plate in bankoPlates)
+        int newNumber;
+
+        //making a while true loop to contain the code so its in a loop
+        while (true)
         {
-            Console.WriteLine($"Plate Name: {plate.Name}");
-            int numberToSpace = 0;
-            Console.WriteLine("Row 1:");
-            foreach (int zero in plate.Row1)
-            if (zero != 0)
+            //in this foreach loop it iterates over a collection of objects of type 'BankoPlate' in the bankoPlates collection
+            foreach (BankoPlate plate in bankoPlates)
             {
-                Console.Write(zero + " ");
-                    Console.Write(zero == numberToSpace ? $"\u0336{zero}\u0336 " : $"{"| "}" );
+                //int number to space is the number that needs to be made into nothing so its not visable
+                int numberToSpace = 0;
+
+                // here we make it print out when there is banko and on wich plate
+                bool bankoRow1 = CheckFullRows(plate.Row1);
+                bool bankoRow2 = CheckFullRows(plate.Row2);
+                bool bankoRow3 = CheckFullRows(plate.Row3);
+
+
+                string result = "";
+                if (bankoRow1 == true)
+                {
+                    result += $"BANKO ROW1! {plate.Name} -";
+                }
+                else
+                {
+                    result += "NO BANKO ROW1! - ";
+                }
+                if (bankoRow2 == true)
+                {
+                    result += $"BANKO! ROW2 {plate.Name} - ";
+                }
+                else
+                {
+                    result += "NO BANKO ROW2! - ";
+                }
+                if (bankoRow3 == true)
+                {
+                    result += $"BANKO! ROW3! {plate.Name}";
+                }
+                else
+                {
+                    result += "NO BANKO ROW3!";
+                }
+                Console.WriteLine(result);
+
+                //here we format the plates in the console GUI
+                Console.WriteLine($"Plate Name: {plate.Name}");
+                Console.WriteLine("Row1:");
+                foreach (int zero in plate.Row1)
+                {
+                    if (zero != 0)
+                    {
+                        Console.Write(zero + " ");
+                        Console.Write(zero == numberToSpace ? $"\u0336{zero}\u0336 " : $"{"| "}");
+
+                    }
+
+                }
+
+                Console.WriteLine("\nRow 2:");
+                foreach (int zero in plate.Row2)
+                {
+                    if (zero != 0)
+                    {
+                        Console.Write(zero + " ");
+                        Console.Write(zero == numberToSpace ? $"\u0336{zero}\u0336 " : $"{"| "}");
+                    }
+                }
+
+                Console.WriteLine("\nRow 3:");
+                foreach (int zero in plate.Row3)
+                {
+                    if (zero != 0)
+                    {
+                        Console.Write(zero + " ");
+                        Console.Write(zero == numberToSpace ? $"\u0336{zero}\u0336 " : $"{"| "}");
+                    }
+                }
+                Console.WriteLine("\n-----------------\n");
             }
-            Console.WriteLine("\nRow 2:");
-            foreach (int zero in plate.Row2)
-            if (zero != 0)
+
+            //Here we store our used/typed in numbers and print them in the console GUI
+            chosenNumber = int.Parse(Console.ReadLine());
+            enteredNumbers.Add(chosenNumber);
+            Console.WriteLine("Used numbers");
+            foreach (int number in enteredNumbers)
             {
-                Console.Write(zero + " ");
-                    Console.Write(zero == numberToSpace ? $"\u0336{zero}\u0336 " : $"{"| "}");
+                Console.Write(number + " ");
             }
-            Console.WriteLine("\nRow 3:");
-            foreach (int zero in plate.Row3)
-            if (zero != 0)
-            {
-                Console.Write(zero + " ");
-                    Console.Write(zero == numberToSpace ? $"\u0336{zero}\u0336 " : $"{"| "}");
-            }
+
             Console.WriteLine("\n-----------------\n");
+            Console.ReadKey();
+            Console.Clear();
         }
-        Console.ReadLine();
+
+        /*Here we make sure that ChechFullRows takes a list of integers and puts them out as boolean value
+         * The purpose is to check if all non-zero numbers is the given in the list are present in another collection named enteredNumbers.
+        */
+        bool CheckFullRows(List<int> row)
+        {
+            foreach (int number in row)
+            {
+
+                if (!enteredNumbers.Contains(number) && number != 0)
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
     }
 }
-
