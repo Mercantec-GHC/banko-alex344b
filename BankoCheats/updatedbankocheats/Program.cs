@@ -21,6 +21,8 @@ public class BankoPlate
 //making a class called program, to store lists
 class Program 
 {
+    static List<int> enteredNumbers = new List<int>();
+
     static void Main(string[] args)
     {
         //Creating list and ids
@@ -39,10 +41,16 @@ class Program
         List<int> plate3Row2 = new List<int>() { 2, 14, 25, 0, 42, 52, 0, 0, 0 };
         List<int> plate3Row3 = new List<int>() { 0, 0, 0, 39, 46, 54, 67, 78, 0 };
 
+        //Alexander 4
+        List<int> plate4Row1 = new List<int>() { 2, 0, 0, 33, 42, 54, 61, 0, 0 };
+        List<int> plate4Row2 = new List<int>() { 4, 15, 25, 0, 47, 0, 0, 0, 84 };
+        List<int> plate4Row3 = new List<int>() { 0, 16, 0, 37, 0, 59, 0, 79, 85 };
+
         List<BankoPlate> bankoPlates = new List<BankoPlate>();
         bankoPlates.Add(new BankoPlate("Alexander 1", plate1Row1, plate1Row2, plate1Row3));
         bankoPlates.Add(new BankoPlate("Alexander 2", plate2Row1, plate2Row2, plate2Row3));
         bankoPlates.Add(new BankoPlate("Alexander 3", plate3Row1, plate3Row2, plate3Row3));
+        bankoPlates.Add(new BankoPlate("Alexander 4", plate4Row1, plate4Row2, plate4Row3));
 
 
         foreach (BankoPlate plate in bankoPlates)
