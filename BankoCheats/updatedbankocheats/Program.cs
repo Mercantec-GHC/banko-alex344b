@@ -8,6 +8,7 @@ public class BankoPlate
     public List<int> Row1 { get; set; }
     public List<int> Row2 { get; set; }
     public List<int> Row3 { get; set; }
+    public List<int>[] Rows { get; set; }
 
     public BankoPlate(string name, List<int> row1, List<int> row2, List<int> row3)
     {
@@ -15,6 +16,7 @@ public class BankoPlate
         Row1 = row1;
         Row2 = row2;
         Row3 = row3;
+        Rows = new List<int>[3] { row1, row2, row3 };
     }
 }
 
@@ -71,67 +73,49 @@ class Program
                 bool bankoRow2 = CheckFullRows(plate.Row2);
                 bool bankoRow3 = CheckFullRows(plate.Row3);
 
-
                 string result = "";
                 if (bankoRow1 == true)
                 {
                     result += $"BANKO ROW1! {plate.Name} -";
                 }
-                else
-                {
-                    result += "NO BANKO ROW1! - ";
-                }
+
                 if (bankoRow2 == true)
                 {
                     result += $"BANKO! ROW2 {plate.Name} - ";
                 }
-                else
-                {
-                    result += "NO BANKO ROW2! - ";
-                }
+
                 if (bankoRow3 == true)
                 {
                     result += $"BANKO! ROW3! {plate.Name}";
                 }
-                else
-                {
-                    result += "NO BANKO ROW3!";
-                }
+
                 Console.WriteLine(result);
 
                 //here we format the plates in the console GUI
                 Console.WriteLine($"Plate Name: {plate.Name}");
-                Console.WriteLine("Row1:");
-                foreach (int zero in plate.Row1)
+                for (int i = 0; i < 3; i++)
                 {
-                    if (zero != 0)
+                    Console.Write($"Row{i+1}:");
+                    foreach (int zero in plate.Rows[i])
                     {
-                        Console.Write(zero + " ");
-                        Console.Write(zero == numberToSpace ? $"\u0336{zero}\u0336 " : $"{"| "}");
+                        if (zero != 0)
+                        {
+                            if (enteredNumbers.Contains(zero))
+                            {
+                                Console.Write("X ");
+                            }
+                            else
+                            {
+                                Console.Write(zero + " ");
+                            }
+                            Console.Write($"{"| "}");
+
+                        }
 
                     }
-
+                    Console.WriteLine();
                 }
-
-                Console.WriteLine("\nRow 2:");
-                foreach (int zero in plate.Row2)
-                {
-                    if (zero != 0)
-                    {
-                        Console.Write(zero + " ");
-                        Console.Write(zero == numberToSpace ? $"\u0336{zero}\u0336 " : $"{"| "}");
-                    }
-                }
-
-                Console.WriteLine("\nRow 3:");
-                foreach (int zero in plate.Row3)
-                {
-                    if (zero != 0)
-                    {
-                        Console.Write(zero + " ");
-                        Console.Write(zero == numberToSpace ? $"\u0336{zero}\u0336 " : $"{"| "}");
-                    }
-                }
+                
                 Console.WriteLine("\n-----------------\n");
             }
 
@@ -145,7 +129,7 @@ class Program
             }
 
             Console.WriteLine("\n-----------------\n");
-            Console.ReadKey();
+            //Console.ReadKey();
             Console.Clear();
         }
 
